@@ -9,3 +9,4 @@ env = { DEEPSEEK_API_KEY = "${DEEPSEEM_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY
 
 [config]
 task_category = "crafting"
+# IronShell Purple Agent submission - Minecraft MCU Benchmark
