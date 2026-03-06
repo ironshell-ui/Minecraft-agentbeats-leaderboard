@@ -102,9 +102,20 @@ jobs:
 
       - name: Create submission branch
         run: |
-          git remote add upstream https://github.com/${{ steps.target.outputs.repo }}.git
-          git fetch upstream
-          git checkout -b ${{ steps.metadata.outputs.branch_name }} upstream/main
+          # Save submission files before switching branches
+          mkdir -p /tmp/submission-files/submissions /tmp/submission-files/results
+          cp submissions/${{ steps.metadata.outputs.unique_name }}.toml /tmp/submission-files/submissions/
+          cp submissions/${{ steps.metadata.outputs.unique_name }}.provenance.json /tmp/submission-files/submissions/
+          cp results/${{ steps.metadata.outputs.unique_name }}.json /tmp/submission-files/results/
+          # Create orphan branch to avoid pushing upstream workflow files
+          # (GITHUB_TOKEN lacks workflows permission, so pushing .github/workflows/ fails)
+          git checkout --orphan ${{ steps.metadata.outputs.branch_name }}
+          git rm -rf . 2>/dev/null || true
+          # Restore only submission files
+          mkdir -p submissions results
+          cp /tmp/submission-files/submissions/* submissions/
+          cp /tmp/submission-files/results/* results/
+
 
       - name: Commit results
         run: |
