@@ -1,0 +1,12 @@
+[green_agent]
+agentbeats_id = "019bad79-fd8b-7cc0-9b0f-36b91fa634d7"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", LOG_LEVEL = "INFO" }
+
+[[participants]]
+agentbeats_id = "ironshell-ui/ironshell"
+name = "agent"
+env = { DEEPSEEK_API_KEY = "${DEEPSEEM_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY}", MINIMAX_API_KEY = "${MINIMAX_API_KEY}", SERPAPI_KEY = "${SERPAPI_KEY}" }
+
+[config]
+task_category = "crafting"
+# IronShell Purple Agent submission - Minecraft MCU Benchmark
