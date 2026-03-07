@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/kwsmoobang/mcu-agentbeats@sha256:25a3e0bca5928d4d84aad06c2a6cdba79892b8ac53c36b1d23770fc90854beb4",
+    "agent": "ghcr.io/ironshell-ui/claudecowork-agent@sha256:f41b5753729c308d59c1c39cca85dae5525c5eda884ca09c73d884a5d4243425",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-03-07T03:33:08Z",
+  "github_actions": {
+    "run_url": "https://github.com/ironshell-ui/Minecraft-agentbeats-leaderboard/actions/runs/22790950255",
+    "run_logs_url": "https://api.github.com/repos/ironshell-ui/Minecraft-agentbeats-leaderboard/actions/runs/22790950255/logs",
+    "ref": "refs/heads/submission-ironshell-mc-v2",
+    "sha": "ef5e8c4cbdf82272ea74bb47b8773296be86d374",
+    "repository_url": "https://github.com/ironshell-ui/Minecraft-agentbeats-leaderboard",
+    "workflow_ref": "ironshell-ui/Minecraft-agentbeats-leaderboard/.github/workflows/run-scenario.yml@refs/heads/submission-ironshell-mc-v2",
+    "workflow_sha": "ef5e8c4cbdf82272ea74bb47b8773296be86d374"
+  }
+}
