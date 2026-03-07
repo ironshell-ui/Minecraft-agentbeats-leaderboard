@@ -1,4 +1,4 @@
-# run: HARD DEBUG Monte Carlo v4.0 — 2026-03-06T19:00
+# run: HARD DEBUG Monte Carlo v5.0 — 2026-03-07T03:18
 [green_agent]
 agentbeats_id = "019bad79-fd8b-7cc0-9b0f-36b91fa634d7"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", LOG_LEVEL = "INFO" }
@@ -11,4 +11,4 @@ env = { DEEPSEEK_API_KEY = "${DEEPSEEK_API_KEY}", KIMI_API_KEY = "${KIMI_API_KEY
 [config]
 task_category = "crafting"
 # IronShell Purple Agent submission - Minecraft MCU Benchmark
-run_id = 7
+run_id = 8
